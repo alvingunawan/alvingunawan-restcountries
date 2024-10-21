@@ -1,0 +1,71 @@
+.cooperation-list {
+  padding: 20px;
+  text-align: center;
+}
+
+.cooperation-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cooperation-list li {
+  margin: 10px 0;
+}
+
+.cooperation-list a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.cooperation-list a:hover {
+  color: #0056b3;
+}
+
+/* Styles for the cooperation list table */
+.cooperation-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cooperation-list th,
+.cooperation-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.cooperation-list th {
+  background-color: #f2f2f2;
+}
+
+.cooperation-list tr {
+  background-color: #f9f9f9;
+}
+
+.cooperation-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style for the delete button */
+.cooperation-list button {
+  background-color: #ff4d4d; /* Red background */
+  color: white; /* White text */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cooperation-list button:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.cooperation-list h1 {
+  color: white;
+}
+
+.cooperation-list .text-no-cooperation {
+  color: white;
+}

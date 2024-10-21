@@ -1,0 +1,83 @@
+.country-detail {
+  text-align: center;
+  padding: 20px;
+}
+
+.country-content-wrapper {
+  color: white;
+  background-color: #3a3a3a;
+  width: 500px;
+  margin: auto;
+}
+
+.flag-coat {
+  display: flex;
+  justify-content: center; /* Ubah untuk menempatkan gambar di tengah */
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.flag,
+.coat-of-arms {
+  margin: 0 20px; /* Berikan margin untuk jarak yang lebih baik */
+}
+
+.flag img,
+.coat-of-arms img {
+  max-width: 100%;
+  height: auto;
+  width: 100px; /* Ubah ukuran gambar agar lebih proporsional */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.google-maps-link,
+.back-to-list,
+.cooperation-add-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 150px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.google-maps-link:hover,
+.back-to-list:hover {
+  background-color: #0056b3; /* Perbaiki hover state agar semua tombol konsisten */
+  text-decoration: none;
+}
+
+button.cooperation-add-button {
+  border: none;
+  cursor: pointer;
+  background-color: #007bff; /* Match background with others */
+  color: white;
+  padding: 10px 15px;
+  width: 150px; /* Ensure the width matches */
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button.cooperation-add-button:hover {
+  background-color: #0056b3;
+}
