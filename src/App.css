@@ -10,7 +10,7 @@ body {
   background-color: #444;
   color: #222;
   line-height: 1.6;
-  padding: 20px;
+  padding: 1.25rem;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +19,7 @@ body {
 .country-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   /* padding: 0; */
 }
@@ -27,12 +27,14 @@ body {
 /* Buat card negara */
 .country-card {
   background: #3a3a3a;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+  padding: 0.625rem;
+  width: 12.5rem;
+  margin: 0.625rem;
   text-align: center;
-  width: calc(20% - 20px); /* Lebar kotak untuk 5 dalam satu baris, mengurangi margin */
-  margin-bottom: 20px; /* Jarak antar baris */
+  width: calc(20% - 1.25rem); /* Lebar kotak untuk 5 dalam satu baris, mengurangi margin */
+  margin-bottom: 1.25rem; /* Jarak antar baris */
 }
 
 .country-card:hover {
@@ -42,7 +44,7 @@ body {
 .country-card img {
   width: 100%;
   border-radius: 5px;
-  height: 5rem;
+  height: 6.5rem;
 }
 
 a {
@@ -56,6 +58,30 @@ a:hover {
 
 .h1Countries {
   text-align: center;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   color: white;
+}
+
+/* Untuk layar ukuran sedang */
+@media (max-width: 768px) {
+  .country-card {
+    width: 9.375rem;
+  }
+  .country-card img {
+    width: 100%;
+    border-radius: 0.3125rem;
+    height: 4.5rem;
+  }
+}
+
+/* Untuk layar kecil, seperti ponsel */
+@media (max-width: 480px) {
+  .country-card {
+    width: 9.375rem;
+  }
+  .country-card img {
+    width: 100%;
+    border-radius: 0.3125rem;
+    height: 4.5rem;
+  }
 }

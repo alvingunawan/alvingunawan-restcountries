@@ -1,12 +1,12 @@
 .navbar {
   background-color: #333;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .navbar ul {
   list-style-type: none;
   margin: 0;
-  padding: 8px;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-around; /* Meratakan link secara horizontal */
 }
@@ -18,7 +18,7 @@
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem;
   transition: background-color 0.3s;
 }
 
