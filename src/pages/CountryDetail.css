@@ -6,12 +6,15 @@
 .country-content-wrapper {
   color: white;
   background-color: #3a3a3a;
-  width: 31.25rem;
+  width: 100%;
+  max-width: 37.5rem;
   margin: auto;
+  padding: 1rem;
 }
 
 .flag-coat {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 1.25rem;
@@ -19,7 +22,8 @@
 
 .flag,
 .coat-of-arms {
-  margin: 0 0.85rem;
+  margin: 0.85rem;
+  flex-basis: 45%;
 }
 
 .flag img,
@@ -72,7 +76,7 @@ button.cooperation-add-button {
   background-color: #007bff;
   color: white;
   padding: 0.625rem 0.9375rem;
-  width: 9.375rem;
+  /* width: 9.375rem; */
   text-align: center;
   border-radius: 0.3125rem;
   margin-right: 0.625rem;
@@ -89,26 +93,33 @@ button.cooperation-add-button:hover {
   display: none;
 }
 
-/* Untuk layar ukuran sedang */
+/* Layar sedang */
 @media (max-width: 768px) {
-  .country-card {
-    width: 9.375rem;
+  .country-content-wrapper {
+    padding: 0.75rem;
   }
-  .country-card img {
+  .flag,
+  .coat-of-arms {
+    flex-basis: 100%;
+  }
+  .google-maps-link,
+  .back-to-list,
+  .cooperation-add-button {
     width: 100%;
-    border-radius: 0.3125rem;
-    height: 4.5rem;
+    margin: 0.5rem 0;
   }
 }
 
-/* Untuk layar kecil, seperti ponsel */
+/* Layar Kecil */
 @media (max-width: 480px) {
   .country-card {
-    width: 8.375rem;
+    width: 100%;
   }
   .country-card img {
     width: 100%;
-    border-radius: 0.3125rem;
-    height: 4.5rem;
+    height: auto;
+  }
+  button.cooperation-add-button {
+    max-width: 100%;
   }
 }
