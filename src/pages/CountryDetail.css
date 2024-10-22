@@ -81,3 +81,27 @@ button.cooperation-add-button {
 button.cooperation-add-button:hover {
   background-color: #0056b3;
 }
+
+/* Untuk layar ukuran sedang */
+@media (max-width: 768px) {
+  .country-card {
+    width: 9.375rem;
+  }
+  .country-card img {
+    width: 100%;
+    border-radius: 0.3125rem;
+    height: 4.5rem;
+  }
+}
+
+/* Untuk layar kecil, seperti ponsel */
+@media (max-width: 480px) {
+  .country-card {
+    width: 9.375rem;
+  }
+  .country-card img {
+    width: 100%;
+    border-radius: 0.3125rem;
+    height: 4.5rem;
+  }
+}
