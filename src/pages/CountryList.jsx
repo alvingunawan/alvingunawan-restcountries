@@ -8,7 +8,11 @@ function CountryList() {
     // Fetch data dari API
     fetch("https://restcountries.com/v3.1/all")
       .then((response) => response.json())
-      .then((data) => setCountries(data));
+      .then((data) => {
+        // Sorting berdasarkan bendera (URL gambar flag)
+        const sortedCountries = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+        setCountries(sortedCountries);
+      });
   }, []);
 
   return (
