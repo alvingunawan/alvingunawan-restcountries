@@ -1,0 +1,16 @@
+.footer-section {
+  background-color: #333;
+  padding: 0.9375rem;
+}
+
+.footer-section h1 {
+  padding-top: 1.5625rem;
+  font-size: 0.75rem;
+  color: white;
+  text-align: center;
+  line-height: 0.0625rem;
+}
+
+.footer-section h1 span {
+  color: #ffdc73;
+}

@@ -3,6 +3,7 @@ import CountryList from "./pages/CountryList";
 import CountryDetail from "./pages/CountryDetail";
 import CooperationList from "./pages/CooperationList";
 import NavbarCountries from "./components/NavbarCountries";
+import FooterComponents from "./components/FooterComponents";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/countries/:id" element={<CountryDetail />} />
         <Route path="/cooperation-list" element={<CooperationList />} />
       </Routes>
+      <FooterComponents />
     </Router>
   );
 }
