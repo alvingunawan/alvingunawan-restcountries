@@ -13,7 +13,7 @@ function CountryDetail() {
       .then((data) => setCountry(data[0])); // Ambil data negara pertama
   }, [id]); // Jalankan setiap kali ID berubah
 
-  if (!country) return <div>Loading...</div>;
+  if (!country) return <div className="loading-text">Loading...</div>;
 
   const handleAddCooperation = () => {
     const existingCooperations = JSON.parse(localStorage.getItem("cooperations")) || [];

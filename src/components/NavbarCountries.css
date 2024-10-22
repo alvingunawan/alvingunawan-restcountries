@@ -1,6 +1,7 @@
 .navbar {
   background-color: #333;
   padding: 0.625rem;
+  width: 100vw;
 }
 
 .navbar ul {
